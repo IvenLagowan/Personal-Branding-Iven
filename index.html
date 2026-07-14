@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Branding - Iven Lagowan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .navbar-custom {
+            background: rgba(255, 255, 255, .95);
+            backdrop-filter: blur(12px);
+            transition: .4s;
+            border-bottom: 1px solid rgba(0, 0, 0, .05);
+        }
+
+        .navbar-custom.shadow-lg {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .12) !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0d6efd !important;
+        }
+
+        .navbar-brand span {
+            color: #212529;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: #555 !important;
+            margin: 0 8px;
+            transition: .3s;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #0d6efd !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 3px;
+            background: #0d6efd;
+            border-radius: 50px;
+            transition: .3s;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .btn-hire {
+            border-radius: 30px;
+            padding: 10px 22px;
+            font-weight: 600;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom shadow-lg sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-code-slash"></i>
+                Iven <span>Lagowan</span>
+            </a>
+
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <a href="#contact" class="btn btn-primary btn-hire shadow">
+                    <i class="bi bi-send-fill"></i> Hire Me
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+
+                <!-- Text -->
+                <div class="col-lg-6 text-center text-lg-start">
+
+                    <span class="badge bg-primary px-3 py-2 mb-3 shadow">
+                        👋 Selamat Datang di Website Saya
+                    </span>
+
+                    <h1 class="display-3 fw-bold">
+                        Hi, Saya <span class="text-primary">Iven Lagowan</span>
+                    </h1>
+
+                    <h3 class="text-secondary mb-4">
+                        Senior Web Developer | Mentor | Founder NITCODE COMMUNITY
+                    </h3>
+
+                    <p class="lead text-muted mb-4">
+                        Saya adalah seorang Web Developer yang berpengalaman dalam membangun
+                        website modern, responsif, dan cepat menggunakan HTML, CSS,
+                        Bootstrap, JavaScript, PHP, Laravel, React JS, dan MySQL.
+                        Saya juga aktif sebagai mentor teknologi dan membangun komunitas
+                        programmer di Papua.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+
+                        <a href="#projects" class="btn btn-primary btn-lg shadow">
+                            <i class="bi bi-folder-fill"></i> Lihat Project
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline-primary btn-lg">
+                            <i class="bi bi-envelope-fill"></i> Hubungi Saya
+                        </a>
+
+                    </div>
+
+                    <div class="row mt-5 text-center">
+
+                        <div class="col-4">
+                            <h2 class="fw-bold text-primary">5+</h2>
+                            <small class="text-muted">Tahun Pengalaman</small>
+                        </div>
+
+                        <div class="col-4">
+                            <h2 class="fw-bold text-primary">50+</h2>
+                            <small class="text-muted">Project</small>
+                        </div>
+
+                        <div class="col-4">
+                            <h2 class="fw-bold text-primary">100+</h2>
+                            <small class="text-muted">Mahasiswa Dibimbing</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Image -->
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+
+                    <img src="image/foto1.jpeg" class="img-fluid rounded-circle shadow-lg border border-5 border-primary"
+                        width="620" alt="Iven Lagowan">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+<section id="about" class="py-5">
+    <div class="container">
+
+        <!-- Judul -->
+        <div class="text-center mb-5">
+            <h5 class="text-primary fw-bold">ABOUT ME</h5>
+            <h2 class="fw-bold">Tentang Saya</h2>
+            <p class="text-muted">
+                Mengenal lebih dekat perjalanan dan pengalaman saya di dunia teknologi.
+            </p>
+        </div>
+
+        <div class="row align-items-center g-5">
+
+            <!-- Foto -->
+            <div class="col-lg-5 text-center">
+
+                <div class="position-relative d-inline-block">
+                    <img src="image/profile.jpeg"
+                        class="img-fluid rounded-4 shadow-lg"
+                        alt="Iven Lagowan">
+
+                    <div class="position-absolute bottom-0 start-50 translate-middle-x bg-primary text-white rounded-pill px-4 py-2 shadow">
+                        <i class="bi bi-award-fill"></i>
+                        Senior Web Developer
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Deskripsi -->
+            <div class="col-lg-7">
+
+                <h2 class="fw-bold mb-3">
+                    Hi, Saya <span class="text-primary">Iven Lagowan</span>
+                </h2>
+
+                <p class="text-muted">
+                    Saya adalah seorang <strong>Senior Web Developer</strong>,
+                    mentor teknologi, dan Founder <strong>NITCODE COMMUNITY</strong>.
+                    Saya memiliki pengalaman dalam membangun website modern,
+                    sistem informasi, aplikasi berbasis web, serta UI/UX yang responsif.
+                </p>
+
+                <p class="text-muted">
+                    Fokus saya adalah membantu individu, organisasi, dan instansi
+                    dalam menciptakan solusi digital menggunakan teknologi terkini
+                    seperti HTML, CSS, Bootstrap, JavaScript, PHP, Laravel,
+                    React JS, dan MySQL.
+                </p>
+
+                <!-- Informasi -->
+                <div class="row mt-4">
+
+                    <div class="col-md-6">
+
+                        <ul class="list-unstyled">
+
+                            <li class="mb-3">
+                                <i class="bi bi-person-fill text-primary"></i>
+                                <strong>Nama :</strong> Iven Lagowan
+                            </li>
+
+                            <li class="mb-3">
+                                <i class="bi bi-mortarboard-fill text-primary"></i>
+                                <strong>Pendidikan :</strong> S.Kom
+                            </li>
+
+                            <li class="mb-3">
+                                <i class="bi bi-geo-alt-fill text-primary"></i>
+                                <strong>Alamat :</strong> Papua, Indonesia
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <ul class="list-unstyled">
+
+                            <li class="mb-3">
+                                <i class="bi bi-envelope-fill text-primary"></i>
+                                <strong>Email :</strong> your@email.com
+                            </li>
+
+                            <li class="mb-3">
+                                <i class="bi bi-laptop-fill text-primary"></i>
+                                <strong>Profesi :</strong> Web Developer
+                            </li>
+
+                            <li class="mb-3">
+                                <i class="bi bi-telephone-fill text-primary"></i>
+                                <strong>WhatsApp :</strong> +62 xxx xxxx xxxx
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Statistik -->
+                <div class="row text-center mt-5">
+
+                    <div class="col-4">
+                        <div class="shadow rounded-4 p-3">
+                            <h2 class="text-primary fw-bold">5+</h2>
+                            <small>Years Experience</small>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="shadow rounded-4 p-3">
+                            <h2 class="text-primary fw-bold">50+</h2>
+                            <small>Projects</small>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="shadow rounded-4 p-3">
+                            <h2 class="text-primary fw-bold">100+</h2>
+                            <small>Students</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Tombol -->
+                <div class="mt-5">
+
+                    <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-4 shadow">
+                        <i class="bi bi-send-fill"></i>
+                        Hubungi Saya
+                    </a>
+
+                    <a href="cv.pdf" class="btn btn-outline-primary btn-lg rounded-pill px-4 ms-2">
+                        <i class="bi bi-download"></i>
+                        Download CV
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-3 py-2 mb-2">MY SKILLS</span>
+            <h2 class="fw-bold">Keahlian Saya</h2>
+            <p class="text-muted">
+                Teknologi yang saya gunakan untuk membangun website modern,
+                responsif, dan berkualitas.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Left -->
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+
+                    <div class="d-flex justify-content-between">
+                        <h5><i class="bi bi-filetype-html text-danger"></i> HTML5</h5>
+                        <strong>98%</strong>
+                    </div>
+
+                    <div class="progress" style="height:10px;">
+                        <div class="progress-bar bg-danger" style="width:98%"></div>
+                    </div>
+
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+
+                    <div class="d-flex justify-content-between">
+                        <h5><i class="bi bi-filetype-css text-primary"></i> CSS3</h5>
+                        <strong>95%</strong>
+                    </div>
+
+                    <div class="progress" style="height:10px;">
+                        <div class="progress-bar bg-primary" style="width:95%"></div>
+                    </div>
+
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4 p-4">
+
+                    <div class="d-flex justify-content-between">
+                        <h5><i class="bi bi-bootstrap-fill text-purple"></i> Bootstrap 5</h5>
+                        <strong>95%</strong>
+                    </div>
+
+                    <div class="progress" style="height:10px;">
+                        <div class="progress-bar bg-info" style="width:95%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+
+                    <div class="d-flex justify-content-between">
+                        <h5><i class="bi bi-filetype-js text-warning"></i> JavaScript</h5>
+                        <strong>90%</strong>
+                    </div>
+
+                    <div class="progress" style="height:10px;">
+                        <div class="progress-bar bg-warning" style="width:90%"></div>
+                    </div>
+
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+
+                    <div class="d-flex justify-content-between">
+                        <h5><i class="bi bi-code-slash text-success"></i> PHP & Laravel</h5>
+                        <strong>92%</strong>
+                    </div>
+
+                    <div class="progress" style="height:10px;">
+                        <div class="progress-bar bg-success" style="width:92%"></div>
+                    </div>
+
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4 p-4">
+
+                    <div class="d-flex justify-content-between">
+                        <h5><i class="bi bi-react text-info"></i> React JS</h5>
+                        <strong>88%</strong>
+                    </div>
+
+                    <div class="progress" style="height:10px;">
+                        <div class="progress-bar bg-info" style="width:88%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Skill Cards -->
+        <div class="row mt-5 g-4">
+
+            <div class="col-md-3">
+                <div class="card border-0 shadow rounded-4 text-center p-4 h-100">
+                    <i class="bi bi-laptop display-4 text-primary"></i>
+                    <h5 class="mt-3">Frontend</h5>
+                    <p class="text-muted small">HTML, CSS, Bootstrap, JavaScript, React JS</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card border-0 shadow rounded-4 text-center p-4 h-100">
+                    <i class="bi bi-server display-4 text-success"></i>
+                    <h5 class="mt-3">Backend</h5>
+                    <p class="text-muted small">PHP, Laravel, REST API, MySQL</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card border-0 shadow rounded-4 text-center p-4 h-100">
+                    <i class="bi bi-phone display-4 text-warning"></i>
+                    <h5 class="mt-3">Responsive</h5>
+                    <p class="text-muted small">Mobile First & Cross Browser Design</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card border-0 shadow rounded-4 text-center p-4 h-100">
+                    <i class="bi bi-lightbulb display-4 text-danger"></i>
+                    <h5 class="mt-3">Problem Solving</h5>
+                    <p class="text-muted small">Analisis sistem dan solusi pengembangan aplikasi.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects" class="py-5 bg-white">
+    <div class="container">
+
+        <!-- Judul -->
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-3 py-2 mb-2">
+                MY PROJECTS
+            </span>
+
+            <h2 class="fw-bold">Project Terbaru</h2>
+
+            <p class="text-muted">
+                Beberapa website dan sistem informasi yang telah saya kerjakan.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow rounded-4 overflow-hidden h-100">
+
+                    <img src="image/project/Screenshot 2025-10-09 125922.png"
+                        class="card-img-top"
+                        alt="Project">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-primary mb-2">
+                            Laravel
+                        </span>
+
+                        <span class="badge bg-success mb-2">
+                            Bootstrap 5
+                        </span>
+
+                        <h4 class="fw-bold">
+                            Sistem Informasi Bantuan Sosial
+                        </h4>
+
+                        <p class="text-muted">
+                            Website pengelolaan data bantuan sosial dengan dashboard admin,
+                            laporan, dan manajemen penerima bantuan.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between">
+
+                        <a href="#" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-eye-fill"></i> Demo
+                        </a>
+
+                        <a href="#" class="btn btn-outline-dark rounded-pill">
+                            <i class="bi bi-github"></i> Source
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow rounded-4 overflow-hidden h-100">
+
+                    <img src="image/project/ss.png"
+                        class="card-img-top"
+                        alt="Project">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-warning text-dark mb-2">
+                            React JS
+                        </span>
+
+                        <span class="badge bg-info mb-2">
+                            API
+                        </span>
+
+                        <h4 class="fw-bold">
+                            Personal Branding Website
+                        </h4>
+
+                        <p class="text-muted">
+                            Website portofolio modern dengan tampilan responsif,
+                            animasi menarik, dan mode terang/gelap.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between">
+
+                        <a href="#" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-eye-fill"></i> Demo
+                        </a>
+
+                        <a href="#" class="btn btn-outline-dark rounded-pill">
+                            <i class="bi bi-github"></i> Source
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow rounded-4 overflow-hidden h-100">
+
+                    <img src="image/project/tusa.png"
+                        class="card-img-top"
+                        alt="Project">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-danger mb-2">
+                            PHP
+                        </span>
+
+                        <span class="badge bg-secondary mb-2">
+                            MySQL
+                        </span>
+
+                        <h4 class="fw-bold">
+                            Website Tour & Travel Papua
+                        </h4>
+
+                        <p class="text-muted">
+                            Sistem informasi destinasi wisata lengkap dengan paket wisata,
+                            pemesanan online, dan dashboard administrator.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between">
+
+                        <a href="#" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-eye-fill"></i> Demo
+                        </a>
+
+                        <a href="#" class="btn btn-outline-dark rounded-pill">
+                            <i class="bi bi-github"></i> Source
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-3 py-2 mb-2">
+                CONTACT ME
+            </span>
+
+            <h2 class="fw-bold">Hubungi Saya</h2>
+
+            <p class="text-muted">
+                Mari berdiskusi mengenai website, aplikasi, atau project yang ingin Anda bangun.
+            </p>
+        </div>
+
+        <div class="row g-5">
+
+            <!-- Contact Info -->
+            <div class="col-lg-5">
+
+                <div class="card border-0 shadow rounded-4 p-4 h-100">
+
+                    <h3 class="fw-bold mb-4">
+                        Informasi Kontak
+                    </h3>
+
+                    <div class="d-flex mb-4">
+                        <div class="icon-contact me-3">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+
+                        <div>
+                            <h5>Alamat</h5>
+                            <p class="text-muted mb-0">
+                                Wamena, Papua Pegunungan, Indonesia
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="icon-contact me-3">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+
+                        <div>
+                            <h5>Email</h5>
+                            <p class="text-muted mb-0">
+                                ivenlagowan@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="icon-contact me-3">
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+
+                        <div>
+                            <h5>WhatsApp</h5>
+                            <p class="text-muted mb-0">
+                                +62 822-3962-6799
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="icon-contact me-3">
+                            <i class="bi bi-laptop-fill"></i>
+                        </div>
+
+                        <div>
+                            <h5>Profesi</h5>
+                            <p class="text-muted mb-0">
+                                Senior Web Developer & Mentor
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Social -->
+                    <h5 class="mb-3">Media Sosial</h5>
+
+                    <div>
+
+                        <a href="#" class="social-btn">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-btn">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" class="social-btn">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="#" class="social-btn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+
+                <div class="card border-0 shadow rounded-4 p-4">
+
+                    <h3 class="fw-bold mb-4">
+                        Kirim Pesan
+                    </h3>
+
+                    <form>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Nama Lengkap">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <input type="email"
+                                    class="form-control"
+                                    placeholder="Email">
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text"
+                                class="form-control"
+                                placeholder="Subjek">
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control"
+                                rows="6"
+                                placeholder="Tulis pesan Anda..."></textarea>
+                        </div>
+
+                        <button class="btn btn-primary btn-lg rounded-pill px-5">
+                            <i class="bi bi-send-fill"></i>
+                            Kirim Pesan
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Google Maps -->
+        <div class="mt-5">
+
+            <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Wamena,Papua&output=embed"
+                    width="100%"
+                    height="350"
+                    style="border:0;"
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer bg-dark text-light pt-5">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <!-- Logo -->
+            <div class="col-lg-4">
+
+                <h2 class="fw-bold text-primary">
+                    <i class="bi bi-code-slash"></i>
+                    Iven Lagowan
+                </h2>
+
+                <p class="mt-3 text-light-emphasis">
+                    Senior Web Developer, Mentor, dan Founder NITCODE COMMUNITY.
+                    Membantu membangun website modern, sistem informasi,
+                    aplikasi web, dan solusi digital yang responsif.
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="#" class="footer-social">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-social">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-social">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="#" class="footer-social">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="#" class="footer-social">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Menu -->
+            <div class="col-lg-2">
+
+                <h5 class="fw-bold mb-4">
+                    Menu
+                </h5>
+
+                <ul class="list-unstyled footer-link">
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#skills">Skills</a></li>
+
+                    <li><a href="#projects">Projects</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Layanan -->
+            <div class="col-lg-3">
+
+                <h5 class="fw-bold mb-4">
+                    Layanan
+                </h5>
+
+                <ul class="list-unstyled footer-link">
+
+                    <li>Website Development</li>
+
+                    <li>UI / UX Design</li>
+
+                    <li>Laravel Development</li>
+
+                    <li>React JS Development</li>
+
+                    <li>Mentoring Programming</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Kontak -->
+            <div class="col-lg-3">
+
+                <h5 class="fw-bold mb-4">
+                    Kontak
+                </h5>
+
+                <p>
+                    <i class="bi bi-geo-alt-fill text-primary"></i>
+                    Wamena, Papua Pegunungan
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope-fill text-primary"></i>
+                    ivenlagowan@gmail.com
+                </p>
+
+                <p>
+                    <i class="bi bi-whatsapp text-primary"></i>
+                    +62 822-3962-6799
+                </p>
+
+                <p>
+                    <i class="bi bi-clock-fill text-primary"></i>
+                    Senin - Sabtu
+                    <br>
+                    08.00 - 18.00 WIT
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Maps -->
+   
+        <!-- Footer Bottom -->
+        <hr class="border-secondary my-5">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+
+                <p class="mb-0">
+                    © 2026 <strong>Iven Lagowan</strong>.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+            <div class="col-md-6 text-md-end">
+
+                <a href="#home" class="btn btn-primary rounded-circle shadow back-top">
+                    <i class="bi bi-arrow-up"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+</body>
+
+</html>
